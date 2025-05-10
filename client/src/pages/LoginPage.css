@@ -1,0 +1,110 @@
+/* Login Page Styles - Improved */
+.login-container {
+  display: flex;
+  height: 100vh; /* Full viewport height for perfect centering */
+  width: 100vw;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Left Side - Login Form */
+.login-left {
+  width: 40%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.login-left h1{
+  margin: 30px;
+  color: #5719b9;
+}
+
+
+.login-left p{
+  color: #5719b9;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form input {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.login-submit {
+  background: linear-gradient(135deg, #6b23e0, #b52d94);
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 23px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.login-submit:hover {
+  background: linear-gradient(135deg, #5719b9, #9a1d7c);
+}
+
+.login-switch-text {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-switch-text a {
+  color: #6b23e0;
+  font-weight: 500;
+}
+
+/* Right Side - 3D Cards Section */
+.login-right {
+  width: 60%;
+  background: linear-gradient(135deg, #6b23e0 0%, #b52d94 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: left;
+}
+
+.login-card-preview {
+  position: relative;
+  width: 400px;
+  height: 250px;
+  perspective: 1000px;
+}
+
+.login-card-image {
+  position: absolute;
+  width: 340px;
+  height: 200px;
+  border-radius: 8px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+  transform-style: preserve-3d;
+}
+
+.login-card1 {
+  top: -20px;
+  left: -50px;
+  transform: rotateY(-20deg) rotateX(5deg) translateZ(20px);
+}
+
+.login-card2 {
+  top: 150px;
+  left: 120px;
+  transform: rotateY(10deg) rotateX(-3deg) translateZ(0);
+}
